@@ -1,0 +1,9 @@
+Historico de Transaçoes do banco
+
+Sobre a conta:1
+Tipo de conta: CP
+Dono: Lana
+Saldo é: 0.0
+Estado do saldo é: true
+Estado: true
+
