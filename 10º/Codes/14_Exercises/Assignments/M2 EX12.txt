@@ -1,0 +1,3 @@
+Problema VENDAS:
+O programa deve solicitar a introdu��o dos valores das vendas efectuadas por X vendedores. 
+De seguida deve calcular e mostrar o total das vendas efectuadas, a m�dia das vendas por vendedor em geral, e indicar quantos vendedores n�o venderam nada.

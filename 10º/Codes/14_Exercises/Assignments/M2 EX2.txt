@@ -1,0 +1,2 @@
+Problema MEDIA:
+Calcule a m�dia dos n�meros introduzidos (excluindo o zero, que faz terminar o ciclo). Utiliza a estrutura wile

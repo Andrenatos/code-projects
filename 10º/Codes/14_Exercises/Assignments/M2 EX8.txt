@@ -1,0 +1,2 @@
+Problema SOMA_IMPARES:
+O programa deve solicitar ao utilizador a introdu��o de um n�mero (N) e depois calcular e mostrar a soma de todos os n�meros �mpares contidos no intervalo de 1 at� N.

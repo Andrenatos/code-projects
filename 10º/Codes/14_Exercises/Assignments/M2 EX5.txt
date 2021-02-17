@@ -1,0 +1,3 @@
+Problema CUBOS_50:
+O programa deve calcular e mostrar os valores correspondentes ao cubo dos 50
+primeiros n�meros inteiros positivos.

@@ -1,0 +1,1 @@
+Some Exercises with SQL

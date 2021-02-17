@@ -1,0 +1,11 @@
+/*Receber um valor de um produto e imprimir esse valor acrescido de  IVA a 6%.Renato 24480 */
+#include<stdio.h>
+int main ()
+{
+	float n1;
+	printf("Introduza o valor do produto\n");
+	scanf("%f",&n1);
+	printf("O produto mais IVA e %f",n1*1.06);
+}
+
+

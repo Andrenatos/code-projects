@@ -1,0 +1,2 @@
+Problema POTENCIA:
+Fa�a um programa que calcule e apresente o valor da pot�ncia de uma base e expoente a indicar pelo utilizador.

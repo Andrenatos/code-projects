@@ -1,0 +1,4 @@
+Problema SOMATORIO:
+Pretende-se um programa que pe�a ao utilizador que introduza sucessivas vezes um valor num�rico inferior a 100 e que v� calculando o respectivo somat�rio, o qual vai sendo escrito no ecr�, at� que o valor desse somat�rio atinja ou ultrapasse 500.
+�	Um n�mero s� poder� ser adicionado ao somat�rio se for inferior a 100.
+�	Uma vez terminado o ciclo, deve ser escrita no ecr� a m�dia dos n�meros v�lidos introduzidos.

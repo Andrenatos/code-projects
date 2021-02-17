@@ -1,0 +1,44 @@
+1.	Problema CANAL_TV:
+Mediante a introdução do número de canal (número entre 1 e 8) o programa deve apresentar a sigla do respetivo canal de televisão de acordo com a seguinte tabela:
+
+Nº CANAL	CANAL TELEVISÃO
+1		RTP1
+2		RTP2
+3		SIC
+4		TVI
+5		RTPN
+6		SIC Noticias
+7		SportTV1
+8		EuroSport
+
+
+2.	Problema NOTA_QUALITATIVA:
+Depois de efetuada a leitura da nota quantitativa do exame realizado por um aluno (valor entre 0 e 20), o programa deve apresentar o seu nível qualitativo tendo por base a seguinte tabela:
+
+Nota Quantitativa		Nota Qualitativa
+Entre 0 e 4			MAU
+Entre 5 e 9			INSUFICIENTE
+Entre 10 e 13			SUFICIENTE
+Entre 14 e 17			BOM
+Entre 18 e 20			MUITO BOM
+Menos de 0 ou mais de 20	Nota inválida
+
+3.	Problema CALCULADORA:
+Depois de efetuar a leitura de dois números, propõe ao utilizador a escolha de uma das quatro operações tradicionais (adição, subtração, multiplicação e divisão). O programa deve efetuar a operação escolhida com base nos dois números introduzidos e mostrar o respetivo resultado.
+
+4.	Problema CIDADE:
+Solicitar ao utilizador que introduza a primeira letra de uma das principais cidades do País (L, P, C, S, B, G, F) e o programa indica por extenso o nome da referida cidade (Lisboa, Porto, Coimbra, Setúbal, Braga, Guimarães,, Faro). No caso de ser inserida uma letra diferente, deverá ser mostrada a mensagem “Não Existe”.
+
+5.	Problema ESCALAO_DESPORTIVO:
+Solicitar ao utilizador a introdução do nome (NOME) e da idade de um atleta (IDADE). O programa deve indicar em que escalão é que ele vai poder competir tendo por base a seguinte tabela:
+
+IDADE			ESCALÃO
+Entre 0 e 5		Observador
+Entre 6 e 8		Iniciado
+Entre 9 e 11		Infantil
+Entre 12 e 14		Cadete
+Entre 15 e 17		Júnior
+Entre 18 e 39		Sénior
+Entre 40 e 54		Veterano A
+A partir dos 55		Veterano B
+Menos de 0		Idade inválida

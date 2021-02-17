@@ -1,0 +1,2 @@
+Problema MEDIA_IDADES:
+O programa deve efectuar a leitura da idade de N indiv�duos e de seguida calcular e mostrar a m�dia de idade correspondente a essas pessoas.

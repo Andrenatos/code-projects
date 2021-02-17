@@ -1,0 +1,3 @@
+Problema MEDIA_MAIORES_18:
+Depois de ler as idades dos alunos de uma turma; pretende-se calcular e mostrar a m�dia das idades dos alunos com mais de 18 anos. 
+A lista dos alunos � finalizada quando for inserido a idade (-1).

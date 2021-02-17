@@ -1,0 +1,197 @@
+Setting environment for using XAMPP for Windows.
+Renato@DESKTOP r:\xampp
+#  cd r:\xampp\mysql\bin
+
+Renato@DESKTOP r:\xampp\mysql\bin
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.17-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases
+    ->
+    ->
+    -> create database Ficha 3
+    -> \c
+MariaDB [(none)]> create database Ficha 3
+    -> \c
+MariaDB [(none)]> color DE
+    -> \c
+MariaDB [(none)]> create database aluguer_video
+    -> create table Cliente
+    -> (cod_cliente int auto_increment primary key,
+    -> create database aluguer_video;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'create table Cliente
+(cod_cliente int auto_increment primary key,
+create data...' at line 2
+MariaDB [(none)]> create database aluguer_video;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> use database aluguer_video;
+ERROR 1049 (42000): Unknown database 'database'
+MariaDB [(none)]> use aluguer_video;
+Database changed
+MariaDB [aluguer_video]> create table Cliente;
+ERROR 1113 (42000): A table must have at least 1 column
+MariaDB [aluguer_video]> create table Cliente
+    -> (cod_cliente int auto_increment primary key,
+    -> nome varchar(20),
+    -> endereço varchar(30));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?o varchar(30))' at line 4
+MariaDB [aluguer_video]> create table Cliente
+    -> (cod_cliente int auto_increment primary key,
+    -> nome varchar(20),
+    -> endereço varchar(30);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?o varchar(30)' at line 4
+MariaDB [aluguer_video]> create table Cliente
+    -> (cod_cliente int auto_increment primary key,
+    -> nome varchar(20),
+    -> endereco varchar(30));
+Query OK, 0 rows affected (0.237 sec)
+
+MariaDB [aluguer_video]> insert into Clientes
+    -> values
+    -> (1,"Aurelio","Av. Roma,333"),
+    -> (2,"Diamantino","Av. Norte-Sul, 454"),
+    -> (3,"Raimundo","Av. Portugal, 444"),
+    -> (4,"Crisostomo","Av. Quatro, 554");
+ERROR 1146 (42S02): Table 'aluguer_video.clientes' doesn't exist
+MariaDB [aluguer_video]> insert into Clientes values
+    -> (1,"Aurelio","Av. Roma,333"),
+    -> (2,"Diamantino","Av. Norte-Sul, 454"),
+    -> (3,"Raimundo","Av. Portugal, 444"),
+    -> (4,"Crisostomo","Av. Quatro, 554");
+ERROR 1146 (42S02): Table 'aluguer_video.clientes' doesn't exist
+MariaDB [aluguer_video]> insert into Cliente values
+    -> (1,"Aurelio","Av. Roma,333"),
+    -> (2,"Diamantino","Av. Norte-Sul, 454"),
+    -> (3,"Raimundo","Av. Portugal, 444"),
+    -> (4,"Crisostomo","Av. Quatro, 554");
+Query OK, 4 rows affected (0.090 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+MariaDB [aluguer_video]> create table Categorias
+    -> (cod int auto_increment primary key,
+    -> descricao varchar(30));
+Query OK, 0 rows affected (0.182 sec)
+
+MariaDB [aluguer_video]> insert into Categorias values
+    -> (1,"Musical"),
+    -> (2,"Comedia"),
+    -> (3,"Aventura"),
+    -> (4,"Ficcao");
+Query OK, 4 rows affected (0.046 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+MariaDB [aluguer_video]> create table filmes
+    -> cod_filme int auto_increment primary key,
+    ->
+    -> \c
+MariaDB [aluguer_video]> create table filmes
+    -> (cod_filme int auto_increment primary key,
+    -> cod int references categorias (cod),
+    -> descricao varchar(30),
+    -> duracao int,
+    -> valor float);
+Query OK, 0 rows affected (0.270 sec)
+
+MariaDB [aluguer_video]> create tabela fitas
+    -> (cod_fita int auto_increment primary key,
+    -> cod_filme int references filmes(cod_filme),
+    -> descricao varchar(20),
+    -> data_compra date);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tabela fitas
+(cod_fita int auto_increment primary key,
+cod_filme int referenc...' at line 1
+MariaDB [aluguer_video]> create table fitas
+    -> (cod_fita int auto_increment primary key,
+    -> cod int references categorias (cod),
+    -> descricao varchar(30),
+    -> data_compra date);
+Query OK, 0 rows affected (0.348 sec)
+
+MariaDB [aluguer_video]> insert into filmes values
+    ->
+    -> \c
+MariaDB [aluguer_video]> insert into filmes values
+    -> (999,1,"Frank Sinatra",90,40.00),
+    -> (999,1,"Frank Sinatra",90,40.00),
+    -> \c
+MariaDB [aluguer_video]> insert into filmes values
+    -> (999,1,"Frank Sinatra",90,40.00),
+    -> (998,2,"Ace Ventura",105,50.00),
+    -> (997,3,"Alien",120,60.00),~
+    -> (996,4,"Novica Rebelde",110,50.00);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '~
+(996,4,"Novica Rebelde",110,50.00)' at line 4
+MariaDB [aluguer_video]> insert into filmes values
+    -> (999,1,"Frank Sinatra",90,40.00),
+    -> (998,2,"Ace Ventura",105,50.00),
+    -> (997,3,"Alien",120,60.00),~
+    -> \c
+MariaDB [aluguer_video]> insert into filmes values
+    -> (999,1,"Frank Sinatra",90,40.00),
+    -> (998,2,"Ace Ventura",105,50.00),
+    -> (997,3,"Alien",120,60.00),
+    -> (998,1,"Novica Rebelde",110,50.00),
+    -> \c
+MariaDB [aluguer_video]> insert into filmes values
+    -> (999,1,"Frank Sinatra",90,40.00),
+    -> (998,2,"Ace Ventura",105,50.00),
+    -> (997,4,"Alien",120,60.00),
+    -> (996,1,"Novica Rebelde",110,50.00);
+Query OK, 4 rows affected (0.059 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+MariaDB [aluguer_video]> insert into fitas values
+    -> (555,999,"Fita um",20191211);
+Query OK, 1 row affected (0.050 sec)
+
+MariaDB [aluguer_video]> show database aluguer_video
+    -> \c
+MariaDB [aluguer_video]> show database aluguer_video;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'database aluguer_video' at line 1
+MariaDB [aluguer_video]> show aluguer_video;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aluguer_video' at line 1
+MariaDB [aluguer_video]> show table filmes;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'filmes' at line 1
+MariaDB [aluguer_video]> insert into fitas values
+    -> (555,999,"Fita um",20191211),
+    -> (553,998,"Fita dois",20121110),
+    -> (559,997,"Fita dezoito",20170410),
+    -> (560,996,"Fita tres",20200118),
+    -> (589,999,"Fita quatro",20120302);
+ERROR 1062 (23000): Duplicate entry '555' for key 'PRIMARY'
+MariaDB [aluguer_video]> insert into fitas values
+    -> (553,998,"Fita dois",20121110),
+    -> (559,997,"Fita dezoito",20170410),
+    -> (560,996,"Fita tres",20200118),
+    -> (589,999,"Fita quatro",20120302);
+Query OK, 4 rows affected (0.051 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+MariaDB [aluguer_video]> create table Aluguer
+    -> (cod_cliente int references Clientes (cod_cliente),
+    -> cod_fita int references fitas (cod_fita),
+    -> data_Aluguer date);
+Query OK, 0 rows affected (0.266 sec)
+
+MariaDB [aluguer_video]> insert into Aluguer values
+    -> (1,555,20201004),
+    -> (2,553,20141119),
+    -> (2,553,20141119),
+    -> \c
+MariaDB [aluguer_video]> insert into Aluguer values
+    -> (1,555,20201004),
+    -> (1,553,20141119),
+    -> (2,559,20181210),
+    -> (3,560,20204080),
+    -> (4,589,20180310);
+Query OK, 5 rows affected, 1 warning (0.112 sec)
+Records: 5  Duplicates: 0  Warnings: 1
+

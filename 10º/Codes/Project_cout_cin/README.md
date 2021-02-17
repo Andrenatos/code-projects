@@ -1,0 +1,1 @@
+A C++ exercise about body mass ratio

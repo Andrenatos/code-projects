@@ -1,0 +1,2 @@
+Problema SOMA_100:
+O programa deve calcular e mostrar o resultado da soma dos 100 n�meros inteiros consecutivos a come�ar pelo n�mero 50 (50+51+52+ �).

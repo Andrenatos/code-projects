@@ -1,0 +1,2 @@
+Problema CUBOS_N:
+O programa deve solicitar ao utilizador a introdu��o de um n�mero (N) e calcular e mostrar os valores correspondentes ao cubo dos N primeiros inteiros positivos (13, 23, �, N3).

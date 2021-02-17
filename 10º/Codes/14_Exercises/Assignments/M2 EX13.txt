@@ -1,0 +1,3 @@
+Problema SOMA_MEDIA:
+O programa deve calcular e mostrar a soma e a m�dia de uma s�rie de n�meros inseridos pelo utilizador.
+O fim da s�rie � assinalado pelo valor zero.

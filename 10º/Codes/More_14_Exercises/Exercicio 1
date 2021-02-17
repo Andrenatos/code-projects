@@ -1,0 +1,10 @@
+/*Ler um Ler um número inteiro e imprimir seu sucessor e seu antecessor.Renato*/
+#include<stdio.h>
+int main()
+{
+	int n1;
+	printf("Escreva um numero inteiro\n");
+	scanf("%d",&n1);
+	printf("O seu sucessor e %d\n",n1+1);
+	printf("O seu antecessor e %d\n",n1-1);
+}
